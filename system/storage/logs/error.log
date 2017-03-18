@@ -1,2 +1,0 @@
-2017-03-18 11:57:28 - PHP Notice:  unserialize(): Error at offset 0 of 3560 bytes in /var/www/demo/catalog/model/extension/module.php on line 8
-2017-03-18 11:57:28 - PHP Notice:  unserialize(): Error at offset 0 of 3560 bytes in /var/www/demo/catalog/model/extension/module.php on line 8

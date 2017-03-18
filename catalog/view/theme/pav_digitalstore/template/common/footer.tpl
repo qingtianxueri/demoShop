@@ -1,18 +1,18 @@
 <?php
   $blockid = 'mass_bottom';
   $blockcls = '';
-  $modules = $helper->getModulesByPosition( $blockid ); 
+  $modules = $helper->getModulesByPosition( $blockid );
   $ospans = array(1=>12, 2=>12);
   $tmcols = 'col-sm-12 col-xs-12';
   require( ThemeControlHelper::getLayoutPath( 'common/block-cols.tpl' ) );
 ?>
- 
+
 <footer id="footer">
- 
+
   <?php
     $blockid = 'footer_top';
     $blockcls = '';
-    $modules = $helper->getModulesByPosition( $blockid ); 
+    $modules = $helper->getModulesByPosition( $blockid );
     $ospans = array();
    if( count($modules) &&  $helper->getConfig('enable_footer_center') ){
     require( ThemeControlHelper::getLayoutPath( 'common/block-footcols.tpl' ) );
@@ -29,9 +29,9 @@
           <?php } ?>
         </div>
       </div>
-    </div>     
-   </div> 
-<?php } ?> 
+    </div>
+   </div>
+<?php } ?>
 
   <?php
   /**
@@ -40,13 +40,13 @@
    */
   $blockid = 'footer_center';
   $blockcls = '';
-  $modules = $helper->getModulesByPosition( $blockid ); 
+  $modules = $helper->getModulesByPosition( $blockid );
   $ospans = array();
   if( count($modules) &&  $helper->getConfig('enable_footer_center') ){
     require( ThemeControlHelper::getLayoutPath( 'common/block-footcols.tpl' ) );
 
   } else { ?>
-  
+
   <div class="footer-center">
     <div class="container">
       <div class="inner">
@@ -63,7 +63,7 @@
             </ul>
           </div>
         </div>
-          
+
         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 column">
           <div class="box">
             <div class="box-heading"><span><?php echo $text_account; ?></span></div>
@@ -91,8 +91,8 @@
           </div>
     </div>
     </div>
-     </div> </div> 
-<?php  } ?> 
+     </div> </div>
+<?php  } ?>
 
 
   <?php
@@ -103,7 +103,7 @@
   ?>
 
 </footer>
- 
+
 <div id="powered">
   <div class="container">
     <div class="inner clearfix">
@@ -111,19 +111,18 @@
         <?php if( $helper->getConfig('enable_custom_copyright', 0) ) { ?>
           <?php echo $helper->getConfig('copyright'); ?>
         <?php } else { ?>
-          <?php echo $powered; ?>. 
+          <?php echo $powered; ?>.
         <?php } ?>
-        Design By <a href="http://www.pavothemes.com" title="pavothemes - opencart themes clubs">PavoThemes</a>
-      </div>  
+      </div>
       <?php if( $content=$helper->getLangConfig('widget_paypal') ) {?>
         <div class="paypal pull-right">
             <?php echo $content; ?>
         </div>
         <?php } ?>
-      
-        
+
+
       </div>
-    </div>   
+    </div>
   </div>
 <div id="top" class="bo-social-icons">
     <a href="#" class="bo-social-gray radius-x scrollup"><i class="fa fa-angle-up"></i></a>
@@ -141,6 +140,6 @@
       echo $helper->renderAddon( 'offcanvas-category');
   }
 
-  ?> 
+  ?>
 </div>
 </body></html>
