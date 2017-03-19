@@ -108,17 +108,17 @@
   <div class="container">
     <div class="inner clearfix">
       <div class="copyright pull-left">
-        <?php if( $helper->getConfig('enable_custom_copyright', 0) ) { ?>
+       <!--  <?php if( $helper->getConfig('enable_custom_copyright', 0) ) { ?>
           <?php echo $helper->getConfig('copyright'); ?>
         <?php } else { ?>
           <?php echo $powered; ?>.
-        <?php } ?>
+        <?php } ?> -->
       </div>
-      <?php if( $content=$helper->getLangConfig('widget_paypal') ) {?>
+      <!-- <?php if( $content=$helper->getLangConfig('widget_paypal') ) {?> -->
         <div class="paypal pull-right">
-            <?php echo $content; ?>
+            <!-- <?php echo $content; ?> -->
         </div>
-        <?php } ?>
+        <!-- <?php } ?> -->
 
 
       </div>

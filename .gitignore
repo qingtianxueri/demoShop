@@ -2,3 +2,4 @@
 /admin/config.php
 /system/storage/logs/*
 /system/storage/cache/*
+/image/cache/*
